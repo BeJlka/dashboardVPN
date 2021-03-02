@@ -1,0 +1,7 @@
+{
+  "response": {
+    "openvpn": ["openvpn"],
+    "firewall": ["iptables"],
+    "service": ["mosquitto", "mongod", "postgresql", "node-red", "client-dashboard"]
+  }
+}

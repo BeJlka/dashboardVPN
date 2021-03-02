@@ -1,0 +1,18 @@
+{
+  "template": {
+    "description": "Создано из шаблона",
+    "code": "",
+    "logs": false,
+    "type": "public",
+    "maxclients": 100,
+    "network": {
+      "host": "0.0.0.0",
+      "remote": "",
+      "internet": "10.1.0.0/24",
+      "port": 1194,
+      "mport": 2294,
+      "proto": "udp",
+      "dev": "tun"
+    }
+  }
+}

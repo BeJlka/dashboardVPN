@@ -1,0 +1,97 @@
+//@import "~materialize-css/dist/css/materialize.min.css";
+@import "node_modules/materialize-css/sass/materialize.scss";
+
+header,
+main,
+footer {
+  padding-left: 300px;
+}
+
+body {
+  #root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    //background-color:#eeeeee;
+    @extend .grey, .lighten-3;
+    // background-color: rgb(241, 234, 234);
+    header {
+      @extend .blue;
+      nav {
+        @extend .blue;
+      }
+      #slide-out {
+        @extend .blue;
+        .collapsible-body {
+          @extend .blue;
+        }
+        .active {
+          @extend .blue, .darken-2;
+        }
+      }
+    }
+    main {
+      flex: 1 0 auto;
+      .block {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+        min-width: 550px;
+        button {
+          @extend .blue; 
+        }
+        .unblocked {
+          @extend .green;
+        }
+        .stop,
+        .delete,
+        .blocked {
+          @extend .red;
+        }
+        .start-disabled,
+        .stop-disabled,
+        .restart-disabled,
+        .download-disabled {
+          @extend .disabled;
+        }
+        button:hover {
+          @extend .z-depth-3;
+        }
+        table {
+          tr {
+            border-bottom: none;
+          }
+        }
+      }
+      a.btn {
+        @extend .blue;
+      }
+      a#close,
+      a.delete {
+        @extend .red;
+      }
+      a#ok {
+        @extend .green;
+      }
+      a:hover {
+        @extend .z-depth-3;
+      }
+      .loader-dashboadr {
+        margin-top: calc(50vh - 254px);
+        // outline: 1px solid red;
+      }
+    }
+    footer {
+      @extend .blue;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) { 
+  header, 
+  main,
+  footer {
+    padding-left: 0;
+  }
+}
