@@ -3,7 +3,7 @@
 echo "Начало установки"
 
 OVPN_DIR=/opt/server-dashboard
-OVPN_GIT=https://github.com/BeJlka/OpenVPN.git
+OVPN_GIT=https://github.com/BeJlka/dashboardVPN.git
 MQTT_DIR=/opt/client-dashboard
 #MQTT_GIT=https://github.com/picalex/web.mqtt.dashboard.git
 MQTT_GIT=https://github.com/Picalex/project1
